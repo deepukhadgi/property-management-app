@@ -1,0 +1,80 @@
+
+--- First 3 rows of Database ---
+[
+  [
+    "Res #",
+    "Room",
+    "First Name",
+    "Last Name",
+    "Full Name"
+  ],
+  [
+    128067,
+    "01.01 YSMR",
+    "Immaculata",
+    "Celina",
+    "CELINA Immaculata"
+  ],
+  [
+    121712,
+    "01.02 YSMR",
+    "Innocentia",
+    "Carissa",
+    "CARISSA Innocentia"
+  ]
+]
+
+--- First 3 rows of Extra cleaning ---
+[
+  [
+    "Accolade",
+    "Extra Charge"
+  ],
+  [
+    "01.26"
+  ],
+  [
+    "02.19",
+    50
+  ]
+]
+
+--- First 3 rows of Irregular Checkouts ---
+[
+  [
+    2024,
+    "Irregular Checkout List"
+  ],
+  [],
+  [
+    null,
+    null,
+    "Total of 2024",
+    null,
+    null,
+    null,
+    "Total by month of:",
+    "June"
+  ]
+]
+
+--- First 3 rows of 2024 ---
+[
+  [
+    null,
+    "Departure Cleaning"
+  ],
+  [],
+  [
+    null,
+    "xx.xx",
+    "Full Name",
+    "Potential Runner",
+    null,
+    null,
+    null,
+    null,
+    null,
+    "Search Box"
+  ]
+]

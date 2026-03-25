@@ -1,0 +1,14 @@
+﻿Sheets:
+- 2023
+- 2024
+- 2026
+- 2025
+- March 2026
+- Price list
+- Temp parser
+- Extra cleaning
+- 2025 Irregular Checkouts
+- Database
+- Irregular Checkouts
+- Backup Code
+
