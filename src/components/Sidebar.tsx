@@ -7,22 +7,25 @@ export default function Sidebar() {
 
   const getNavLinks = () => {
     const adminLinks = [
-      { to: '/departures', icon: <CalendarClock className="w-5 h-5 mr-3" />, label: 'Departures Tracker' },
       { to: '/irregular-checkouts', icon: <ClipboardCheck className="w-5 h-5 mr-3" />, label: 'Irregular Checkouts' },
       { to: '/residents', icon: <Users className="w-5 h-5 mr-3" />, label: 'Resident Database' },
-      { to: '/extra-cleaning', icon: <Sparkles className="w-5 h-5 mr-3" />, label: 'Extra Cleaning' },
       { to: '/pricelist', icon: <ListOrdered className="w-5 h-5 mr-3" />, label: 'Price List Manager' },
       { to: '/settings', icon: <SettingsIcon className="w-5 h-5 mr-3" />, label: 'Settings' },
     ];
-    
-    if (role === 'Superuser') {
-      adminLinks.push({ to: '/users', icon: <ShieldAlert className="w-5 h-5 mr-3" />, label: 'User Management' });
-    }
 
     const facilityLinks = [
       { to: '/departures', icon: <CalendarClock className="w-5 h-5 mr-3" />, label: 'Cleaning Schedule' },
       { to: '/extra-cleaning', icon: <Sparkles className="w-5 h-5 mr-3" />, label: 'Log Extra Cleaning' },
     ];
+    
+    if (role === 'Superuser') {
+      return [
+        { to: '/users', icon: <ShieldAlert className="w-5 h-5 mr-3" />, label: 'User Management' },
+        ...facilityLinks,
+        ...adminLinks
+      ];
+    }
+
     return role === 'Facility' ? facilityLinks : adminLinks;
   };
 
